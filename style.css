@@ -1,0 +1,181 @@
+
+.hero {
+    position: relative;
+    background: url("./images/reagan-m-Wtcs0CVXor8-unsplash.webp");
+    /*!*background: #20631D;*!*/
+    /*background-image: linear-gradient(to bottom, #20631d, #4e811a, #809e10, #b9b900, #f9d200);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+}
+.hero .hero-content {
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+/*.poster {*/
+/*  background-color: hsl(34, 53%, 82%);*/
+/*  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,*/
+/*  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,*/
+/*  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,*/
+/*  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,*/
+/*  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,*/
+/*  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px*/
+/*  ),*/
+/*  repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,*/
+/*          hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,*/
+/*          hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,*/
+/*          hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,*/
+/*          hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,*/
+/*          hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px*/
+/*  );*/
+/*}*/
+
+.producers {
+    background: url("./images/sam-van-bussel-MrE4n1hzvLg-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.buyers {
+    background: url("./images/jeremy-yap-J39X2xX_8CQ-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sellers {
+    background: url("./images/film-festivals.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-form {
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.exhibition-card {
+    background: url("./images/matej-klic-UPb0uU8Dx78-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.exhibition-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.conference-card {
+    background: url("./images/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash-_1_.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.conference-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.workshop-card {
+    background: url("./images/lexscope-0k2mMcdTOYU-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.workshop-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.screening-card {
+    background: url("./images/jonatan-moerman-4nUQH0EXzfg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.screening-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.delegates-card {
+    background: url("./images/benjamin-child-0sT9YhNgSEs-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.delegates-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.loginPart {
+    background: url("./images/reagan-m-IkDu_hd6_Qw-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.prodPart {
+    background: url("./images/reagan-m-Wtcs0CVXor8-unsplash.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sellersPart {
+    background: url("./images/film-festivals.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
