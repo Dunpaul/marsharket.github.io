@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+<nav class="sticky">
+    <div class="container pt-4 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between px-4 z-20">
+            <div class="absolute inset-y-0 right-2 flex items-center block md:hidden">
+                <!-- Mobile menu button -->
+                <button
+                        type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-[#f9d200] hover:bg-[#f9d200] hover:text-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#f9d200]"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        onclick="toggleMobileMenu()"
+                >
+                    <i class="bi bi-list text-4xl"></i>
+                </button>
+            </div>
+            <div class="justify-between sm:flex">
+                <div class="sm:ml-6 justify-around flex items-center" id="large-screen-menu">
+                    <div class="h-20 w-20 me-10">
+                        <a href="index.html" class="font-light italic text-3xl text-[#f43f5e]">
+                            <img
+                                    src="./images/logo.png"
+                                    alt="MashaRket Logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="index.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Home</a>
+                        <a href="about.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">About</a>
+                        <a href="events.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Events</a>
+                        <a href="delegation.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Delegation</a>
+                        <a href="calendar.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Calendar</a>
+                        <a href="tours.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Tours</a>
+                        <a href="media.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Media</a>
+                        <a href="gallery.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="button" class="inline-flex items-center justify-center rounded-md py-2 px-4 border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-md hidden md:block font-medium text-white outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                    <a href="/login">Register</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col absolute z-50 top-20 w-full bg-white border-b-gray-400">
+            <a href="index.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Home</a>
+            <a href="about.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">About</a>
+            <a href="events.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Event</a>
+            <a href="delegation.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Delegation</a>
+            <a href="calendar.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Calendar</a>
+            <a href="tours.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Tours</a>
+            <a href="media.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Media</a>
+            <a href="gallery.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Gallery</a>
+        </div>
+    </div>
+</nav>
+<!--header-->
+<header class="bg-black">
+    <div class="container about-hero max-w-7xl bg-black pb-3 rounded-3xl pb-5 relative">
+        <!-- Header component -->
+        <div class="container p-8 md:pb-12 md:flex md:justify-around relative">
+            <div class="relative z-10">
+                <h1 class='text-white text-5xl md:text-7xl  mb-8'>
+                    Tours Within <span class="text-[#F9D200]">Kigali </span>, <br> Rwanda and<span class="text-[#F9D200]">MashaRket </span>
+                </h1>
+                <div class="text-center pt-12 flex flex-col md:flex-row">
+                    <a href="registration.html" class="border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-white text-lg font-semibold px-4 py-2 mx-2  rounded-full shadow-lg mb-2">
+                        Exhibitors
+                    </a>
+                    <a href="registration.html" class="border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-white text-lg font-semibold px-4 py-2 mx-2 rounded-full shadow-lg mb-2">
+                        Buyers
+                    </a>
+                    <a href="registration.html" class="border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200]  text-white text-lg font-semibold px-4 py-2 mx-2  rounded-full shadow-lg mb-2">
+                        Sellers
+                    </a>
+                    <a href="registration.html" class="border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-white text-lg font-semibold px-4 py-2 mx-2  rounded-full shadow-lg mb-2">
+                        Producers
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="flex justify-end">
+                    <!-- Image component -->
+                    <img src="./images/event_note_FILL0_wght400_GRAD0_opsz48.svg" alt="Event Note">
+                </div>
+                <div class="">
+                    <h3 class="text-white text-lg text-end font-semibold">
+                        28th to 30th November, 2023
+                    </h3>
+                    <h3 class="text-white text-lg text-end font-semibold">
+                        Kigali Conference and <br/>
+                        Exhibition Village
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="absolute rounded-full h-[200px] w-[200px] bg-[#00a1df] right-[12%] bottom-[25%] z-0"></div>
+        <div class="absolute rounded-full h-[150px] w-[150px] border border-[10px] border-[#F9d200] right-[1%] bottom-[1%] z-0"></div>
+        <div class="absolute rounded-full h-[150px] w-[150px] border border-[10px] border-[#20631d] left-[1%] bottom-[25%] z-0"></div>
+    </div>
+</header>
+<!--main-->
+<main class="bg-black text-white">
+    <section class="container max-w-6xl py-4 px-8 h-[500px]">
+        <h1 class="text-center text-5xl">Coming Soon!</h1>
+    </section>
+</main>
+<!--footer-->
+<footer class="bg-black">
+    <section class="container max-w-6xl bg-black text-white relative px-4">
+        <div class="absolute rounded-full h-[50px] w-[50px] bg-[#00a1df] left-[60%] top-[40%] z-0"></div>
+
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 mb-8">
+                <div class="p-3">
+                    <div class="w-20 md:w-40">
+                        <img
+                                src="./images/logo.png"
+                                alt="MashaRket Logo"
+                        />
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h4 class="text-xl text-white text-centr font-semibold">
+                        Venue &amp; Date
+                    </h4>
+                    <p class="text-cente text-white text-sm">
+                        <span class="font-semibold">Date:</span> 28th to 30th November, 2023 <br/>
+                        <span class="font-semibold">Venue:</span> Kigali Conference and <br/>
+                        Exhibition Village
+                    </p>
+                </div>
+                <div class="p-3">
+                    <h4 class="text-xl text-white text-center font-semibold">
+                        Contact us
+                    </h4>
+                    <div class="text-sm md:text-center">
+                        <p class="mb-2">
+                            <a class="text-white hover:text-[#C6C6C6]" href="tel:+254 708 714 473">
+                                <i class="bi bi-phone text-xl"></i> +254 726 762 558
+                            </a>
+                        </p>
+                        <p>
+                            <a class="text-white hover:text-[#C6C6C6]" href="mailto:marsharket@gmail.com">
+                                info@marsharket.com
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <p class="text-sm">&copy; All rights reserved 2023</p>
+                </div>
+                <div class="flex justify-around pb-8">
+                    <a href="https://linktr.ee/masharketkigali" target="_blank" class="px-3" title="Linktree">
+                        <i class="bi bi-tree  text-[#075e54] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/254726762558" target="_blank" class="px-3" title="WhatsApp">
+                        <i class="bi bi-whatsapp  text-[#075e54]  hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100094379964201" target="_blank" class="px-3" title="Facebook">
+                        <i class="bi bi-facebook text-[#4267B2] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC4kgqtuqvEncVMvSqqHcefQ" target="_blank" class="px-3" title="Youtube">
+                        <i class="bi bi-youtube text-[#FF0000] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/masharket1/" target="_blank" class="px-3" title="Instagram">
+                        <i class="bi bi-instagram text-[#C13584] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@masharket2023?is_from_webapp=1&sender_device=pc" target="_blank" class="px-3" title="Tiktok">
+                        <i class="bi bi-tiktok text-[#F0F0F0] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/mashaRket2023" target="_blank" class="px-3" title="twitter">
+                        <i class="bi bi-twitter text-[#1DA1F2] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/masharket-kigali-international-content-market" target="_blank" class="px-3" title="LinkedIn">
+                        <i class="bi bi-linkedin text-[#F0F0F0] hover:text-[#919191] text-xl"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

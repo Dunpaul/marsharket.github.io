@@ -9,67 +9,67 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
+<nav class="sticky">
+    <div class="container pt-4 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between px-4 z-20">
+            <div class="absolute inset-y-0 right-2 flex items-center block md:hidden">
+                <!-- Mobile menu button -->
+                <button
+                        type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-[#f9d200] hover:bg-[#f9d200] hover:text-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#f9d200]"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        onclick="toggleMobileMenu()"
+                >
+                    <i class="bi bi-list text-4xl"></i>
+                </button>
+            </div>
+            <div class="justify-between sm:flex">
+                <div class="sm:ml-6 justify-around flex items-center" id="large-screen-menu">
+                    <div class="h-20 w-20 me-10">
+                        <a href="index.html" class="font-light italic text-3xl text-[#f43f5e]">
+                            <img
+                                    src="./images/logo.png"
+                                    alt="MashaRket Logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="index.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Home</a>
+                        <a href="about.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">About</a>
+                        <a href="events.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Events</a>
+                        <a href="delegation.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Delegation</a>
+                        <a href="calendar.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Calendar</a>
+                        <a href="tours.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Tours</a>
+                        <a href="media.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Media</a>
+                        <a href="gallery.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="button" class="inline-flex items-center justify-center rounded-md py-2 px-4 border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-md hidden md:block font-medium text-white outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                    <a href="/login">Register</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col absolute z-50 top-20 w-full bg-white border-b-gray-400">
+            <a href="index.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Home</a>
+            <a href="about.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">About</a>
+            <a href="events.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Event</a>
+            <a href="delegation.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Delegation</a>
+            <a href="calendar.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Calendar</a>
+            <a href="tours.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Tours</a>
+            <a href="media.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Media</a>
+            <a href="gallery.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Gallery</a>
+        </div>
+    </div>
+</nav>
 <!--header-->
     <header class="bg-black">
         <div class="container about-hero max-w-7xl bg-black pb-3 rounded-3xl pb-5 relative">
             <!-- Header component -->
-            <nav>
-                <div class="container pt-4 sm:px-6 lg:px-8">
-                    <div class="relative flex h-16 items-center justify-between px-4 z-20">
-                        <div class="absolute inset-y-0 right-2 flex items-center block md:hidden">
-                            <!-- Mobile menu button -->
-                            <button
-                                    type="button"
-                                    class="inline-flex items-center justify-center rounded-md p-2 text-[#f9d200] hover:bg-[#f9d200] hover:text-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#f9d200]"
-                                    aria-controls="mobile-menu"
-                                    aria-expanded="false"
-                                    onclick="toggleMobileMenu()"
-                            >
-                                <i class="bi bi-list text-4xl"></i>
-                            </button>
-                        </div>
-                        <div class="justify-between sm:flex">
-                            <div class="sm:ml-6 justify-around flex items-center" id="large-screen-menu">
-                                <div class="h-20 w-20 me-10">
-                                    <a href="index.html" class="font-light italic text-3xl text-[#f43f5e]">
-                                        <img
-                                                src="./images/logo.png"
-                                                alt="MashaRket Logo"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="hidden md:block">
-                                    <a href="index.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Home</a>
-                                    <a href="about.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">About</a>
-                                    <a href="events.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Events</a>
-                                    <a href="#" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Delegation</a>
-                                    <a href="#" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Calendar</a>
-                                    <a href="#" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Tours</a>
-                                    <a href="3" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Media</a>
-                                    <a href="#" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Gallery</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <button type="button" class="inline-flex items-center justify-center rounded-md py-2 px-4 border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-md hidden md:block font-medium text-white outline-none" aria-controls="mobile-menu" aria-expanded="false">
-                                <a href="/login">Register</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden" id="mobile-menu">
-                    <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col absolute z-50 top-20 w-full bg-white border-b-gray-400">
-                        <a href="index.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Home</a>
-                        <a href="about.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">About</a>
-                        <a href="events.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Event</a>
-                        <a href="#" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Delegation</a>
-                        <a href="#" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Calendar</a>
-                        <a href="#" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Tours</a>
-                        <a href="#" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Media</a>
-                        <a href="#" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Gallery</a>
-                    </div>
-                </div>
-            </nav>
             <div class="container p-8 md:pb-12 md:flex md:justify-around relative">
                 <div class="relative z-10">
                     <h1 class="text-white text-5xl md:text-6xl mb-8">
