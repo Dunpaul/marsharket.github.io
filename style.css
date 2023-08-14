@@ -1,3 +1,10 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust as needed */
+    background-color: black;
+}
 
 .hero {
     position: relative;
@@ -6,7 +13,7 @@
     /*background-image: linear-gradient(to bottom, #20631d, #4e811a, #809e10, #b9b900, #f9d200);*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
 }
 
