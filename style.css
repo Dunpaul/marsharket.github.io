@@ -186,3 +186,95 @@
     background-size: cover;
     background-position: center;
 }
+/* Add animation to headings */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to specific headings */
+.animate-slide-in {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+/* Add animation to buttons */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add animation to divs */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to specific divs */
+.animate-slide-in-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.animate-slide-in-bottom {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+
+/* Apply animation to specific buttons */
+.animate-slide-in-right-fast {
+    animation: slideInFromRight 0.7s ease-out forwards; /* Fastest animation */
+}
+
+.animate-slide-in-right-medium {
+    animation: slideInFromRight 0.8s ease-out forwards; /* Medium animation */
+}
+
+.animate-slide-in-right-slow {
+    animation: slideInFromRight 0.9s ease-out forwards; /* Slowest animation */
+}
+
+.animate-slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
+}
