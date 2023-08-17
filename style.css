@@ -82,7 +82,7 @@
 }
 
 .exhibition-card {
-    background: url("./images/matej-klic-UPb0uU8Dx78-unsplash.jpg");
+    background: url("./images/exhibition.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,7 +99,7 @@
     border-radius: 24px;
 }
 .conference-card {
-    background: url("./images/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash-_1_.webp");
+    background: url("./images/conference.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,7 +116,7 @@
     border-radius: 24px;
 }
 .workshop-card {
-    background: url("./images/lexscope-0k2mMcdTOYU-unsplash.webp");
+    background: url("./images/workshops.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -133,7 +133,7 @@
     border-radius: 24px;
 }
 .screening-card {
-    background: url("./images/jonatan-moerman-4nUQH0EXzfg-unsplash.jpg");
+    background: url("./images/workshops.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,12 +150,31 @@
     border-radius: 24px;
 }
 .delegates-card {
-    background: url("./images/benjamin-child-0sT9YhNgSEs-unsplash.jpg");
+    background: url("./images/delegates.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .delegates-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.tours-card {
+    background-color: white;
+    background: url("./images/toursss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.tours-card::after {
     content: "";
     position: absolute;
     top: 0;
