@@ -1,3 +1,10 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust as needed */
+    background-color: black;
+}
 
 .hero {
     position: relative;
@@ -6,7 +13,7 @@
     /*background-image: linear-gradient(to bottom, #20631d, #4e811a, #809e10, #b9b900, #f9d200);*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
 }
 
@@ -75,7 +82,7 @@
 }
 
 .exhibition-card {
-    background: url("./images/matej-klic-UPb0uU8Dx78-unsplash.jpg");
+    background: url("./images/exhibition.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -92,7 +99,7 @@
     border-radius: 24px;
 }
 .conference-card {
-    background: url("./images/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash-_1_.webp");
+    background: url("./images/conference.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,7 +116,7 @@
     border-radius: 24px;
 }
 .workshop-card {
-    background: url("./images/lexscope-0k2mMcdTOYU-unsplash.webp");
+    background: url("./images/workshops.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -126,7 +133,7 @@
     border-radius: 24px;
 }
 .screening-card {
-    background: url("./images/jonatan-moerman-4nUQH0EXzfg-unsplash.jpg");
+    background: url("./images/workshops.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,12 +150,31 @@
     border-radius: 24px;
 }
 .delegates-card {
-    background: url("./images/benjamin-child-0sT9YhNgSEs-unsplash.jpg");
+    background: url("./images/delegates.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .delegates-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+}
+.tours-card {
+    background-color: white;
+    background: url("./images/toursss.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.tours-card::after {
     content: "";
     position: absolute;
     top: 0;
@@ -178,4 +204,96 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+/* Add animation to headings */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to specific headings */
+.animate-slide-in {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+/* Add animation to buttons */
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add animation to divs */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to specific divs */
+.animate-slide-in-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.animate-slide-in-bottom {
+    animation: slideInFromBottom 1s ease-out forwards;
+}
+
+
+/* Apply animation to specific buttons */
+.animate-slide-in-right-fast {
+    animation: slideInFromRight 0.7s ease-out forwards; /* Fastest animation */
+}
+
+.animate-slide-in-right-medium {
+    animation: slideInFromRight 0.8s ease-out forwards; /* Medium animation */
+}
+
+.animate-slide-in-right-slow {
+    animation: slideInFromRight 0.9s ease-out forwards; /* Slowest animation */
+}
+
+.animate-slide-in-right {
+    animation: slideInFromRight 1s ease-out forwards;
 }
