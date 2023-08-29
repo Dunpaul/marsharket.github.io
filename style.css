@@ -54,21 +54,27 @@
 /*}*/
 
 .producers {
-    background: url("./images/sam-van-bussel-MrE4n1hzvLg-unsplash.webp");
+    background: url("./images/undraw_reading_book_re_kqpk.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .buyers {
-    background: url("./images/jeremy-yap-J39X2xX_8CQ-unsplash.webp");
+    background: url("./images/undraw_art_museum_-8-or4.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .sellers {
-    background: url("./images/film-festivals.webp");
+    background: url("./images/undraw_online_gallery_re_3098.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.virts {
+    background: url("./images/undraw_virtual_reality_re_yg8i.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
