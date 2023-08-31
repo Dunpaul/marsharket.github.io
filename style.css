@@ -54,7 +54,7 @@
 /*}*/
 
 .producers {
-    background: url("./images/kenny-eliason-zFSo6bnZJTw-unsplash.webp");
+    background: url("./images/students.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -90,7 +90,7 @@
 }
 
 .sellers {
-    background: url("./images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.webp");
+    background: url("./images/exhibitors.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -107,7 +107,7 @@
     border-radius: 14px;
 }
 .virts {
-    background: url("./images/virts.webp");
+    background: url("./images/webinar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
