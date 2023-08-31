@@ -54,30 +54,74 @@
 /*}*/
 
 .producers {
-    background: url("./images/linkedin-sales-solutions-jJFrkJP_-RA-unsplash.webp");
+    background: url("./images/kenny-eliason-zFSo6bnZJTw-unsplash.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.producers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 14px;
 }
 
 .buyers {
-    background: url("./images/jeremy-yap-J39X2xX_8CQ-unsplash.webp");
+    background: url("./images/non-exhibitors.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.buyers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
 }
 
 .sellers {
-    background: url("./images/geri-mis-btpqhY1vWvQ-unsplash.webp");
+    background: url("./images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.sellers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
+}
 .virts {
-    background: url("./images/chris-montgomery-smgTvepind4-unsplash.webp");
+    background: url("./images/virts.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.virts::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 14px;
 }
 
 .contact-form {
