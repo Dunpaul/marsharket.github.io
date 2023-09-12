@@ -48,3 +48,39 @@ function handleAnimation() {
 
 // Attach event listener to window scroll event
 window.addEventListener('scroll', handleAnimation);
+
+// collapsible section
+document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.collapsible-button');
+    const contents = document.querySelectorAll('.collapsible-content');
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            const isOpen = contents[index].classList.toggle('hidden');
+            // Push down other open sections
+            if (isOpen) {
+                contents.forEach((content, i) => {
+                    if (i !== index && !content.classList.contains('hidden')) {
+                        content.style.transform = 'translateY(100%)';
+                        content.style.opacity = '0';
+                    }
+                });
+            } else {
+                // If closing, remove push-down for all
+                contents.forEach((content) => {
+                    content.style.transform = '';
+                    content.style.opacity = '';
+                });
+            }
+
+            // Close other collapsible sections
+            contents.forEach((content, i) => {
+                if (i !== index) {
+                    content.classList.add('hidden');
+                }
+            });
+
+        });
+    });
+});
+

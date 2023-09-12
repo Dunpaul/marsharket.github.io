@@ -347,3 +347,24 @@
 .animate-slide-in-right {
     animation: slideInFromRight 1s ease-out forwards;
 }
+
+/* Custom CSS for slide animation */
+.collapsible-content-enter-active, .collapsible-content-leave-active {
+    transition: all 0.3s;
+}
+.collapsible-content-enter, .collapsible-content-leave-to /* .collapsible-content-leave-active in <2.1.8 */ {
+    transform: translate(0, -100%);
+    opacity: 0;
+}
+.push-down {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.collapsible-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}

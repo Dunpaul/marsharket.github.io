@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+<nav class="sticky">
+    <div class="container pt-4 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between px-4 z-20">
+            <div class="absolute inset-y-0 right-2 flex items-center block md:hidden">
+                <!-- Mobile menu button -->
+                <button
+                        type="button"
+                        class="inline-flex items-center justify-center rounded-md p-2 text-[#f9d200] hover:bg-[#f9d200] hover:text-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#f9d200]"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        onclick="toggleMobileMenu()"
+                >
+                    <i class="bi bi-list text-4xl"></i>
+                </button>
+            </div>
+            <div class="justify-between sm:flex">
+                <div class="sm:ml-6 justify-around flex items-center" id="large-screen-menu">
+                    <div class="h-20 w-20 me-10">
+                        <a href="index.html" class="font-light italic text-3xl text-[#f43f5e]">
+                            <img
+                                    src="./images/logo.png"
+                                    alt="MashaRket Logo"
+                            />
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <a href="index.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Home</a>
+                        <a href="about.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">About</a>
+                        <a href="events.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Events</a>
+                        <a href="delegation.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Delegates</a>
+                        <a href="calendar.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Calendar</a>
+                        <a href="tours.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Tours</a>
+                        <a href="media.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Media</a>
+                        <a href="gallery.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">Gallery</a>
+                        <a href="faq.html" class="text-white px-6 py-2 rounded-md text-md font-medium hover:bg-[#f9d200]" aria-current="page">FAQs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="button" class="inline-flex items-center justify-center rounded-md py-2 px-4 border border-2 border-[#f9d200] bg-transparent hover:bg-[#f9d200] text-md hidden md:block font-medium text-white outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                    <a href="registration.html">Register</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col absolute z-50 top-20 w-full bg-white border-b-gray-400">
+            <a href="index.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Home</a>
+            <a href="about.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">About</a>
+            <a href="events.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Event</a>
+            <a href="delegation.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Delegates</a>
+            <a href="calendar.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Calendar</a>
+            <a href="tours.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Tours</a>
+            <a href="media.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Media</a>
+            <a href="gallery.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">Gallery</a>
+            <a href="faq.html" class="text-gray-500 hover:bg-[#f9d200] hover:text-white px-6 py-2 rounded-md text-md font-medium">FAQs</a>
+        </div>
+    </div>
+</nav>
+<!--header-->
+<header class="bg-black">
+    <div class="container about-hero max-w-7xl bg-black pb-3 rounded-3xl pb-5 relative">
+        <!-- Header component -->
+        <div class="container p-8 md:pb-12 md:flex md:justify-around relative">
+            <div class="relative z-10">
+                <h1 class='text-white text-5xl md:text-6xl  mb-8  animate-slide-in'>
+                    <span class="text-[#F9D200]">Frequently Asked <br> Questions</span>
+                </h1>
+
+            </div>
+
+            <div class="relative z-10 animate-slide-in">
+                <div class="flex justify-end">
+                    <!-- Image component -->
+                    <img src="./images/event_note_FILL0_wght400_GRAD0_opsz48.svg" alt="Event Note">
+                </div>
+                <div class="">
+                    <h3 class="text-white text-lg text-end font-semibold">
+                        28th to 30th November, 2023
+                    </h3>
+                    <h3 class="text-white text-lg text-end font-semibold">
+                        Kigali Conference and <br/>
+                        Exhibition Village
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="absolute rounded-full h-[200px] w-[200px] bg-[#00a1df] right-[12%] bottom-[25%] z-0"></div>
+        <div class="absolute rounded-full h-[150px] w-[150px] border border-[10px] border-[#F9d200] right-[1%] bottom-[1%] z-0"></div>
+        <div class="absolute rounded-full h-[150px] w-[150px] border border-[10px] border-[#20631d] left-[1%] bottom-[25%] z-0"></div>
+    </div>
+</header>
+<!--main-->
+<main class="bg-black text-white">
+    <section class="container max-w-6xl py-4 px-8 min-h-[500px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>What is Masharket Content Market, and what is its primary purpose?
+</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        MashaRket is a content market that will be hosted at the 9th Mashariki African film festival
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>How can I register for Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        You can register via our website <a href="www.masharket.com ">www.masharket.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>Who is the target audience for Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        All media stakeholders, filmmakers, film enthusiasts, film commissions, content buyers, content distributors                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>When and where will the Masharket Content Market be held?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        Masharket will be held in Kigali Rwanda at the Kigali Conference and Exhibition Village
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>What categories of content are typically featured at Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        All genres of content feature films, series, animation, formats, sports, reality
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>Are there opportunities for content pitching or project presentations at Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        Yes, there will be a pitching masterclass and session                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>What networking events and activities are available during the event?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        There will be Cocktail events, screening, B2B and B2C meetings
+
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>Is there an exhibition area for companies and organizations to promote their products and services?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        Yes, register to be an exhibitor via our website <a href="https://www.masharket.com/reg_exhibitors">www.masharket.com</a>
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>How can I schedule meetings with potential partners or buyers at Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        Once you register and pay, you will have access to the meeting booking calendar and access to all delegates
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>What are the key benefits of attending Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <ul class="list-disc list-inside">
+                        <li>
+                            It is a convergence of Anglophone and Francophone Africa
+                        </li>
+                        <li>
+                            It brings together East Africa and the great lakes region
+                        </li>
+                        <li>
+                            It is hosted within a film festival
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>What safety measures and health precautions are in place, especially considering current health concerns?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        All registered delegates will require to have a covid certificate. We will also ensure the venue is sanitized and fumigated
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>What is the cancellation and refund policy for Masharket Content Market registration?/span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        If you cancel less than a month to the event, you will not be refunded
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <button
+                        class="collapsible-button bg-gray-800 text-white p-2 w-full rounded hover:bg-gray-700 focus:outline-none text-left text-lg font-semibold flex justify-between items-center"
+                >
+                    <span>How can I get in touch with the organizers for additional questions or assistance related to Masharket Content Market?</span>
+                    <i class="bi bi-chevron-down font-bold"></i>
+                </button>
+                <div
+                        class="collapsible-content hidden absolute left-0 right-0 bg-black border border-gray-600 p-4 mt-2 z-10 shadow-lg rounded"
+                >
+                    <!-- Content goes here -->
+                    <p>
+                        Email us on <a href="mailto:info@masharket.com">info@masharket.com</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+<!--footer-->
+<footer class="bg-black">
+    <section class="container max-w-6xl bg-black text-white relative px-4">
+        <div class="absolute rounded-full h-[50px] w-[50px] bg-[#00a1df] left-[60%] top-[40%] z-0"></div>
+
+        <div class="relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 mb-8">
+                <div class="p-3">
+                    <div class="w-20 md:w-40">
+                        <img
+                                src="./images/logo.png"
+                                alt="MashaRket Logo"
+                        />
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h4 class="text-xl text-white text-centr font-semibold">
+                        Venue &amp; Date
+                    </h4>
+                    <p class="text-cente text-white text-sm">
+                        <span class="font-semibold">Date:</span> 28th to 30th November, 2023 <br/>
+                        <span class="font-semibold">Venue:</span> Kigali Conference and <br/>
+                        Exhibition Village
+                    </p>
+                </div>
+                <div class="p-3">
+                    <h4 class="text-xl text-white text-center font-semibold">
+                        Contact us
+                    </h4>
+                    <div class="text-sm md:text-center">
+                        <p class="mb-2">
+                            <a class="text-white hover:text-[#C6C6C6]" href="tel:+254 708 714 473">
+                                <i class="bi bi-phone text-xl"></i> +254 726 762 558
+                            </a>
+                        </p>
+                        <p>
+                            <a class="text-white hover:text-[#C6C6C6]" href="mailto:marsharket@gmail.com">
+                                info@marsharket.com
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between">
+                <div>
+                    <p class="text-sm">&copy; All rights reserved 2023</p>
+                </div>
+                <div class="flex justify-around pb-8">
+                    <a href="https://linktr.ee/masharketkigali" target="_blank" class="px-3" title="Linktree">
+                        <i class="bi bi-tree  text-[#075e54] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/254726762558" target="_blank" class="px-3" title="WhatsApp">
+                        <i class="bi bi-whatsapp  text-[#075e54]  hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100094379964201" target="_blank" class="px-3" title="Facebook">
+                        <i class="bi bi-facebook text-[#4267B2] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC4kgqtuqvEncVMvSqqHcefQ" target="_blank" class="px-3" title="Youtube">
+                        <i class="bi bi-youtube text-[#FF0000] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/masharket1/" target="_blank" class="px-3" title="Instagram">
+                        <i class="bi bi-instagram text-[#C13584] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@masharket2023?is_from_webapp=1&sender_device=pc" target="_blank" class="px-3" title="Tiktok">
+                        <i class="bi bi-tiktok text-[#F0F0F0] hover:text-[#919191] text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com/mashaRket2023" target="_blank" class="px-3 pt-2" title="twitter">
+                        <img src="./images/x-logo/logo.svg" class="h-4 w-4" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/company/masharket-kigali-international-content-market" target="_blank" class="px-3" title="LinkedIn">
+                        <i class="bi bi-linkedin text-[#F0F0F0] hover:text-[#919191] text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
