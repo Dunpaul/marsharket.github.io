@@ -84,3 +84,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Function to show the content and hide the loader
+function showContent() {
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+// Function to show the "Amend your Registration" content
+function showAmendContent() {
+    document.getElementById('content').style.display = 'none';
+    document.getElementById('amendContent').style.display = 'block';
+}
+
+// Hide the content and amendContent initially
+document.getElementById('content').style.display = 'none';
+document.getElementById('amendContent').style.display = 'none';
+
+// Show the content after 3 seconds
+setTimeout(showContent, 3000); // 3000 milliseconds = 3 seconds
+
+// Show the "Amend your Registration" content when the button is clicked
+document.getElementById('amendButton').addEventListener('click', showAmendContent);

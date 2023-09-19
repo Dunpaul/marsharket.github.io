@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MashaRket</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+</head>
+<body class="bg-black">
+
+
+<!--main-->
+<main class="main-section relative bg-black text-white min-h-screen">
+    <!-- Hero component -->
+    <section class="container mb-16 max-w-6xl px-3">
+        <div class="absolute rounded-full h-[200px] w-[200px] border border-[40px] border-[#F9d200] left-[5%] top-[20%] z-0"></div>
+        <div class="absolute rounded-full h-[50px] w-[50px] bg-[#00a1df] left-[80%] top-[20%] z-0"></div>
+    </section>
+
+
+    <section class="relative flex align-center justify-center z-30">
+        <div class="bg-gray-800 w-1/2 p-6 rounded-lg shadow-lg">
+            <!--Loader-->
+            <div id="loader" class="relative flex align-center justify-center z-30  h-[200px] pt-26">
+                <lord-icon
+                        src="https://cdn.lordicon.com/ymrqtsej.json"
+                        trigger="loop"
+                        colors="primary:#f9d200"
+                        style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+
+            <!--Prompt to check what the user what to do-->
+            <div id="content" class="relative  h-[200px]">
+                <h3 class="text-2xl text-center font-semibold mb-6">Do you want to:</h3>
+                <div class="grid grid-cols-1 gap-2">
+                    <div>
+                        <button type="button" class="bg-[#20631d] w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!--Redirect to the initial payment page-->
+                            <a href="#">Complete your Payment</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button id="amendButton" type="button" class="bg-[#20631d] w-full w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!-- Redirect to the initial payment page -->
+                            <a href="#">Amend your Registration</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="bg-[#20631d] w-full w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!--Redirect to the home page-->
+                            <a href="index.html">Come back Later</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Prompt to allow a user to ammend their registration-->
+            <!-- Content to be displayed after clicking "Amend your Registration" -->
+            <div id="amendContent" class="hidden relative ">
+                <h3 class="text-2xl text-center font-semibold mb-6">Select your New Category</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div>
+                        <button type="button" class="bg-[#20631d] w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!-- Redirect to the initial payment page -->
+                            <a href="exhibitors_registration.html">Exhibitor</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="bg-[#20631d] w-full w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!-- Redirect to the initial payment page -->
+                            <a href="nonexhibtrs_registration.html">Non-Exhibitor</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="bg-[#20631d] w-full w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!-- Redirect to the initial home page -->
+                            <a href="students_regstration.html">Student</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="bg-[#20631d] w-full w-full py-3 rounded hover:shadow-lg font-medium">
+                            <!-- Redirect to the initial home page -->
+                            <a href="exhibitors_registration.html">Virtual Attendant</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="absolute rounded-full h-[200px] w-[200px] bg-[#00a1df] right-[12%] bottom-[25%] z-0"></div>
+    <div class="absolute rounded-full h-[150px] w-[150px] border border-[10px] border-[#F9d200] right-[1%] bottom-[1%] z-0"></div>
+    <div class="absolute rounded-full h-[150px] w-[150px] border border-[10px] border-[#20631d] left-[1%] bottom-[25%] z-0"></div>
+</main>
+<!--footer-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
