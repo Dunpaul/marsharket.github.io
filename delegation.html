@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delegation</title>
     <link rel="stylesheet" href="./style.css">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css"></script>
     <!-- Hotjar Tracking Code for https://www.masharket.com/ -->
     <script>
         (function(h,o,t,j,a,r){
@@ -176,36 +179,36 @@
           <div class="table-responsive overflow-x-auto">
               <div class="card card-primary">
             <div class="card-body">
-            <table class="table min-w-full" id="example1">
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Company Name</th>
-             
-            </tr>
-          </thead>
-          <tbody>
-            <?php
-              $cnt = 1;
-              $right_now = date('Y-m-d H:i:s');
-              foreach ($registers as $register) {
-                $registration_id = encrypt($register['registration_id']);
-            ?>
-              <tr>
-                <td><?= $cnt ?></td>
-                <td><?= $register['company_contact_first_name'] ?></td>
-                <td><?= $register['company_contact_last_name'] ?></td>
-                <td><?= $register['company_name'] ?></td>
-                
-              </tr>
-            <?php
-                $cnt++;
-              }
-            ?>
-          </tbody>
-        </table>
+            <table class="table min-w-full table-auto" id="example1">
+                <thead>
+                    <tr>
+                    <th>No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Company Name</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $cnt = 1;
+                    $right_now = date('Y-m-d H:i:s');
+                    foreach ($registers as $register) {
+                        $registration_id = encrypt($register['registration_id']);
+                    ?>
+                    <tr>
+                        <td><?= $cnt ?></td>
+                        <td><?= $register['company_contact_first_name'] ?></td>
+                        <td><?= $register['company_contact_last_name'] ?></td>
+                        <td><?= $register['company_name'] ?></td>
+                        
+                    </tr>
+                    <?php
+                        $cnt++;
+                    }
+                    ?>
+                </tbody>
+            </table>
            
 
         </div>
@@ -219,6 +222,10 @@
                 </div>
      
       <script>
+        let table = new DataTable('#example1', {
+            // options
+            
+        });
        if (sessionStorage.getItem('registration_payment_status') === 'paid') {
         document.querySelectorAll('.table-responsive').forEach(el => el.style.display = 'block');
          document.querySelectorAll('.msg').forEach(el => el.style.display = 'none');
